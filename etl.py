@@ -10,8 +10,8 @@ config.read('dl.cfg')
 
 os.environ['AWS_ACCESS_KEY_ID'] = config['AWS']['AWS_ACCESS_KEY_ID']
 os.environ['AWS_SECRET_ACCESS_KEY'] = config['AWS']['AWS_SECRET_ACCESS_KEY']
-song_data_path = "song_data/A/B/C/TRABCEI128F424C983.json"
-log_data_path = "log_data/2018/11/2018-11-12-events.json"
+song_data_path = "song_data/*"
+log_data_path = "log_data/*"
 
 
 def create_spark_session():
